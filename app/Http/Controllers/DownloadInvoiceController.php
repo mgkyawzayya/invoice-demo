@@ -6,7 +6,7 @@ use function Spatie\LaravelPdf\Support\pdf;
 
 class DownloadInvoiceController
 {
-    public function __invoke()
+    public function index()
     {
         return pdf()
             ->view('pdf.invoice')

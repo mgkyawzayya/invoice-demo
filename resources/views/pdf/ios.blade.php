@@ -32,7 +32,7 @@
         }
 
         p {
-            font-size: 11px;
+            font-size: 12px;
             margin: 0;
         }
 
@@ -84,219 +84,129 @@
 <body>
 <div class="container">
     <div class="row mt-2">
-        <img
-            src="data:image/png; base64, {{ base64_encode(file_get_contents(public_path('img/logo.png'))) }}"
-            style="width: 100px; height: 90px;"
-            class="ms-3"
-        >
+        <div class="d-flex justify-content-between align-items-center">
+            <img
+                src="data:image/png; base64, {{ base64_encode(file_get_contents(public_path('img/ios-logo.png'))) }}"
+                style="width: 100px; height: 90px;"
+                class="ms-3"
+            >
 
-        <p class="text-center text-md">วันเขียนสัญญา <span class="fw-bold">26/8/2024, 13:52:54</span> สัญญาเลขที่ <span class="text-red mx-1 fw-bold">AD1</span> ทำที่ บริษัท พีเจ-ฟินน์ จำกัด</p>
+            <div>
+                <p class="text-md">วันที่เขียนสัญญา <span class="fw-bolder">{{ "<Date ,Time >" }}</span></p>
+                <p class="text-md">สัญญาเลขที่ <span class="fw-bolder">{{ "<Contract number >" }}</span></p>
+                <p class="text-md">สินค้าจากร้าน <span class="fw-bolder">{{ "<Branch stores >" }}</span></p>
+            </div>
+        </div>
 
-        <p>สินค้าจากร้าน</p>
+        <p class="fw-bolder text-center text-lg mb-3" style="color: #434343 !important;">{{ "หนังสือสัญญาเช่าซื้อ <Android> <บริษัท พีเจ-ฟินน์ จำกัด>" }}</p>
 
-        <p class="fw-bolder text-center text-lg mb-3" style="color: #434343 !important;">หนังสือสัญญาเช่าซื้อ Android บริษัท พีเจ-ฟินน์ จำกัด</p>
-
-        <p class="mb-2" style="text-indent: 80px;">สัญญาฉบับนี้ทำขึ้นระหว่าง บริษัท พีเจ-ฟินน์ จำกัด ตัง
-            ตำบลบ้านใหม่ อำเภอสามพราน จังหวัดนครปฐม 73110
-            อยูเ่ ลขที่ 108 หมู2
-            ซึ่งต่อไปนี้ในสัญญาฉบับนี้จะเรียกว่า "ผูใ้ ห้เช่าซื้อ" ฝ่ายหนึ่งกับ</p>
+        <p class="mb-2" style="text-indent: 80px;">สัญญาฉบับนี้ทำขึ้นระหว่าง <span class="fw-bolder">{{ "<บริษัท พีเจ-ฟินน์ จำกัด>" }}</span> ตั้งอยู่เลขที่ <span class="fw-bolder">{{ "<108 หมู่2 ตำบลบ้านใหม่ อำเภอสามพราน จังหวัดนครปฐม 73110>" }}</span> ซึ่งต่อไปนี้ในสัญญาฉบับนี้จะเรียกว่า "<span class="text-red fw-bolder">{{ "ผู้ให้เช่าซื้อ" }}</span>" ฝ่ายหนึ่งกับ</p>
 
         <div class="mb-2">
             <div class="row">
-                <div class="col-md-7"><p>ชื่อ-นามสกุล: <span class="fw-bold">น.ส.นวินดา สีหาเวช</span></p></div>
-                <div class="col-md-4"><p class="ps-4">เลขบัตร : <span class="fw-bold">1330400106243</span></p></div>
+                <div class="col-md-7"><p>ชื่อ-นามสกุล: <span class="fw-bolder">น.ส.นวินดา สีหาเวช</span></p></div>
+                <div class="col-md-4"><p class="ps-4">เลขบัตร : <span class="fw-bolder">1330400106243</span></p></div>
             </div>
 
             <div class="row">
-                <div class="col-md-7"><p>ที่อยูปัจบัน : <span class="fw-bold">7/6 ม.9 ซ.วันเพ็ญ ต.สำโรงใต้ อ.พระประแดง 33130</span></p></div>
-                <div class="col-md-4"><p class="ps-4">เบอร์หลัก : <span class="fw-bold">0928253049</span></p></div>
+                <div class="col-md-7"><p>ที่อยูปัจบัน : <span class="fw-bolder">7/6 ม.9 ซ.วันเพ็ญ ต.สำโรงใต้ อ.พระประแดง 33130</span></p></div>
+                <div class="col-md-4"><p class="ps-4">เบอร์หลัก : <span class="fw-bolder">0928253049</span></p></div>
             </div>
 
             <div class="row">
-                <div class="col-md-7"><p>ที่ทำงาน : <span class="fw-bold">ร้านเสื้อผ้า ชัน3 ห้างอิมพีเรียลสำโรง</span></p></div>
-                <div class="col-md-4"><p class="ps-4">เบอร์อ้างอิง : <span class="fw-bold">0642911065.</span></p></div>
+                <div class="col-md-7"><p>ที่ทำงาน : <span class="fw-bolder">ร้านเสื้อผ้า ชัน3 ห้างอิมพีเรียลสำโรง</span></p></div>
+                <div class="col-md-4"><p class="ps-4">เบอร์อ้างอิง : <span class="fw-bolder">0642911065.</span></p></div>
             </div>
         </div>
 
         <p class="mb-2" style="text-indent: 30px;">
-            รายละเอียดปรากฏตามสำเนาบัตรประชาชน ซึ่งต่อไปนี้จะเรียกว่า "ผูเ้ ช่าซื้อ" อีกฝ่ายหนึ่ง ทัง
-            สองฝ่ายตกลงทำสัญญากัน
-            ผูใ้ ห้เช่าซื้อตกลงให้เช่าซื้อและผูเ้ ช่าซื้อตกลงเช่าซื้อทรัพย์สน
-            และชำระค่างวดตามรายการทรัพย์สน
-            ที่เช่าซื้อในบัญชีรายการเช่าซื้อด้านล่างนี้
+            รายละเอียดปรากฏตามสำเนาบัตรประชาชน ซึ่งต่อไปนี้จะเรียกว่า "<span class="text-red fw-bolder">ผู้เช่าซื้อ</span>" อีกฝ่ายหนึ่ง ทั้งสองฝ่ายตกลงทำสัญญากัน ผู้ให้เช่าซื้อตกลงให้เช่าซื้อ และผู้เช่าซื้อตกลงเช่าซื้อทรัพย์สินและชำระค่างวดตามรายการทรัพย์สินที่เช่าซื้อในบัญชีรายการเช่าซื้อด้านล่างนี้
         </p>
 
-
         <div class="mb-2">
             <div class="row">
                 <div class="col-md-3">
-                    <p>รุน : <span class="fw-bold">Oppo A60</span></p>
+                    <p>สินค้า : <span class="fw-bolder">{{ "<ใหม่>" }}</span></p>
                 </div>
                 <div class="col-md-4">
-                    <p>ความจุ : <span class="fw-bold">128 GB</span></p>
+                    <p>โทรศัพท์ : <span class="fw-bolder">{{ "<Samsung>" }}</span></p>
                 </div>
                 <div class="col-md-3">
-                    <p>Ram : <span class="fw-bold">8</span></p>
+                    <p>รุ่น : <span class="fw-bolder">{{ "<A11>" }}</span></p>
                 </div>
                 <div class="col-md-2">
-                    <p>มือ : <span class="fw-bold">1</span></p>
+                    <p>สี : <span class="fw-bolder">{{ "<ดำ>" }}</span></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <p>สี : <span class="fw-bold">ฟ้า</span></p>
+                    <p>สเปค : <span class="fw-bolder">{{ "<4Gb/128Gb>" }}</span></p>
                 </div>
                 <div class="col-md-4">
-                    <p>IMEI : <span class="fw-bold">868800077927691</span></p>
+                    <p>IMEI : <span class="fw-bolder">{{ "<325556985412589>" }}</span></p>
                 </div>
                 <div class="col-md-3">
-                    <p>Serial: <span class="fw-bold">F150e442</span></p>
+                    <p>SN : <span class="fw-bolder">{{ "<RT145TFDSA>" }}</span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <p>ราคาสินค้า : <span class="fw-bolder">{{ "<auto>" }}</span></p>
+                </div>
+                <div class="col-md-4">
+                    <p>เงินดาวน์ : <span class="fw-bolder">{{ "<8,000>" }}</span> บาท</p>
+                </div>
+                <div class="col-md-3">
+                    <p>คงเหลือ : <span class="fw-bolder">{{ "<auto>" }}</span> บาท</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <p>ผ่อนเดือนละ : <span class="fw-bolder">{{ "<1,000>" }}</span> บาท</p>
+                </div>
+                <div class="col-md-4">
+                    <p>จำนวนเดือน : <span class="fw-bolder">{{ "<12>" }}</span> เดือน</p>
+                </div>
+                <div class="col-md-3">
+                    <p>ชำระทุกวันที่ : <span class="fw-bolder">{{ "<10>" }}</span></p>
                 </div>
             </div>
         </div>
-
-        <div class="mb-2">
-            <div class="row">
-                <div class="col-md-3">
-                    <p>ราคาสินค้า : <span class="fw-bold">0 บาท</span></p>
-                </div>
-                <div class="col-md-4">
-                    <p>เงินดาวน์ : <span class="fw-bold">3,366 บาท</span></p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <p>ชำระทุกวันที่ : <span class="fw-bold">30</span></p>
-                </div>
-                <div class="col-md-4">
-                    <p>จำนวนเดือน : <span class="fw-bold">6 เดือน</span></p>
-                </div>
-                <div class="col-md-3">
-                    <p>ผ่อนเดือนละ : <span class="fw-bold">1,510 บาท</span></p>
-                </div>
-            </div>
-        </div>
-
-        <p class="text-center">*** ราคานี้รวมค่าประกันสินค้าแล้ว (เงื่อนไขการรับประกันเป็นไปตามที่ทางร้านกำหนด)***</p>
 
         {{--            table--}}
         <table class="table table-bordered border-secondary">
             <thead>
-            <tr class="bg-gray">
-                <td class="bg-gray"><p>งวดที่</p></td>
-                <td class="bg-gray"><p>กำหนดจ่าย</p></td>
-                <td class="bg-gray"><p>ค่างวด</p></td>
-                <td class="bg-gray"><p>โอน/เงินสด</p></td>
-                <td class="bg-gray"><p>ผูร้บยอด</p></td>
-                <td class="bg-gray"><p>หมายเหตุ</p></td>
-                <td class="bg-gray"><p>งวดที่</p></td>
-                <td class="bg-gray"><p>กำหนดจ่าย</p></td>
-                <td class="bg-gray"><p>ค่างวด</p></td>
-                <td class="bg-gray"><p>โอน/เงินสด</p></td>
-                <td class="bg-gray"><p>ผูร้บยอด</p></td>
-                <td class="bg-gray"><p>หมายเหตุ</p></td>
-            </tr>
+                <tr class="bg-gray">
+                    <td class="bg-gray" style="width: 10%;"><p>งวดที่</p></td>
+                    <td class="bg-gray" style="width: 20%;"><p>จำนวนเงิน</p></td>
+                    <td class="bg-gray" style="width: 20%;"><p>กำหนดชำระ</p></td>
+                    <td class="bg-gray" style="width: 28%;"><p>สถาณะ</p></td>
+                    <td class="bg-gray" style="width: 20%;"><p>วันที่ชำระ</p></td>
+                </tr>
             </thead>
 
             <tbody>
-            <tr>
-                <td><p class="text-center fw-bold">1.</p></td>
-                <td><p class="text-center fw-bold">30/09/2024</p></td>
-                <td><p class="text-center fw-bold">1,510</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold">7.</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-            </tr>
-
-            <tr>
-                <td><p class="text-center fw-bold">2.</p></td>
-                <td><p class="text-center fw-bold">30/09/2024</p></td>
-                <td><p class="text-center fw-bold">1,510</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold">8.</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-            </tr>
-
-            <tr>
-                <td><p class="text-center fw-bold">3.</p></td>
-                <td><p class="text-center fw-bold">30/09/2024</p></td>
-                <td><p class="text-center fw-bold">1,510</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold">9.</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-            </tr>
-
-            <tr>
-                <td><p class="text-center fw-bold">4.</p></td>
-                <td><p class="text-center fw-bold">30/09/2024</p></td>
-                <td><p class="text-center fw-bold">1,510</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold">10.</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-            </tr>
-
-            <tr>
-                <td><p class="text-center fw-bold">5.</p></td>
-                <td><p class="text-center fw-bold">30/09/2024</p></td>
-                <td><p class="text-center fw-bold">1,510</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold">11.</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-            </tr>
-
-            <tr>
-                <td><p class="text-center fw-bold">6.</p></td>
-                <td><p class="text-center fw-bold">30/09/2024</p></td>
-                <td><p class="text-center fw-bold">1,510</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold">12.</p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-                <td><p class="text-center fw-bold"></p></td>
-            </tr>
+                @for($i=1;$i<13;$i++)
+                    <tr>
+                        <td><p class="text-center fw-bold">{{ $i }}</p></td>
+                        <td><p class="text-center fw-bold">1,000</p></td>
+                        <td><p class="text-center fw-bold">10/10/2024</p></td>
+                        <td><p class="text-center fw-bold">{{ "<โอน>" }}</p></td>
+                        <td><p class="text-center fw-bold">{{ "<10/10/2024>" }}</p></td>
+                    </tr>
+                @endfor
             </tbody>
         </table>
+
+        <p class="text-center">*** ราคานี้รวมค่าประกันสินค้าแล้ว (เงื่อนไขการรับประกันเป็นไปตามที่ทางร้านกำหนด)***</p>
 
         {{--            tac--}}
         <div class="tac mb-3">
             <p>เงื่อนไขการผ่อนชำระสินค้า</p>
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <table class="table table-borderless">
                         <tbody>
                         <tr>
@@ -359,48 +269,29 @@
                     <p style="color: blue !important;text-align: center;">"เราดำเนินคดีจริงทุกเคสฝ่ายกฎหมายว่างพร้อมไปศาลได้ตลอดคุณละว่างไหมเสียงานเสียการฉะนันอย่าล้อเล่นกับระบบ"</p>
                     <p style="color: blue !important;text-align: center;">ชำระเงิน โอนเข้าบัญชี 8541013291 ธนาคารกรุงศรี ชื่อ อัสนัย แก้วบำรุง เท่านัน</p>
                 </div>
-
-                {{--                    qr-section--}}
-                <div class="col-2 py-3 mb-2">
-                    <div class="text-center mb-2">
-                        <img
-                            src="data:image/png; base64, {{ base64_encode(file_get_contents(public_path('img/qr-pay.png'))) }}"
-                            style="width: 95px; height: 100px;"
-                        >
-                        <p class="fw-bold">แสกนเพื่อชำระเงิน</p>
-                    </div>
-                    <div class="text-center">
-                        <img
-                            src="data:image/png; base64, {{ base64_encode(file_get_contents(public_path('img/qr-line.png'))) }}"
-                            style="width: 95px; height: 100px;"
-                        >
-                        <p>แอดไลน์เพื่อแจ้งสลิป</p>
-                        <p>Line: <span class="fw-bolder">@806uambf</span></p>
-                    </div>
-                </div>
             </div>
         </div>
 
         {{--                    signature--}}
-        <div class="d-flex justify-content-between mb-2">
-            <div class="text-center">
-                <p class="mb-2">ยินยอมตามเงือนไข</p>
-                <p class="mb-2">ลงชื่อ………………………………………………………ผูเ้ช่าซื้อ</p>
-                <p>(น.ส.นวินดา สีหาเวช)</p>
-            </div>
-            <div class="text-center">
-                <div class="mb-2" style="height: 12px;"></div>
-                <p class="mb-2">ลงชื่อ………………………………………………ผูใ้ห้เช่าซื้อ</p>
-                <p>0</p>
-            </div>
-        </div>
+        <div class="mb-2">
+            <p class="mb-2">ยินยอมตามเงือนไข</p>
 
-        <div>
-            <img
-                src="data:image/png; base64, {{ base64_encode(file_get_contents(public_path('img/undersignqr.png'))) }}"
-                style="width: 60px; height: 70px;"
-            >
-            <span class="d-inline-block" style="font-size: 10px;position: relative;top: 26px;">ติดตามข่าวสารและโปรโมชันได้ที่เพจ</span>
+            <div class="d-flex justify-content-evenly">
+                <div class="text-center">
+                    <p class="mb-2 fw-bolder">(<span class="d-inline-block" style="width: 130px;border: 0.5px solid #000000;"></span>)</p>
+                    <p class="fw-bolder mb-2">{{ "<น.ส.นวินดา สีหาเวช>" }}</p>
+                    <p class="fw-bolder text-red">ผู้เช่าซื้อ</p>
+                </div>
+                <div class="text-center">
+                    <p class="mb-2 fw-bolder">(<span class="d-inline-block" style="width: 130px;border: 0.5px solid #000000;"></span>)</p>
+                    <p class="fw-bolder mb-2">{{ "<Branch stores >" }}</p>
+                    <p class="fw-bolder text-red">ผู้อนุมัติสินค้า</p>
+                </div>
+                <div class="text-center">
+                    <p class="fw-bolder" style="margin-bottom: 33px;">(<span class="d-inline-block" style="width: 130px;border: 0.5px solid #000000;"></span>)</p>
+                    <p class="fw-bolder text-red">พยาน</p>
+                </div>
+            </div>
         </div>
 
 

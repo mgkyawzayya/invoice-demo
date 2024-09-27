@@ -349,19 +349,40 @@
                         <p class="mb-1 fw-bolder">(<span class="d-inline-block"
                                 style="width: 130px;border: 0.3px solid #000000;"></span>)</p>
                         <p class="fw-bolder mb-1">{{ '<น.ส.นวินดา สีหาเวช>' }}</p>
-                        <p class="fw-bolder text-red">ผู้เช่าซื้อ</p>
+                        <p class="fw-bolder text-red mb-2">ผู้เช่าซื้อ</p>
+
+                        <div class="mx-auto" style="width: 80px;">
+                            <img
+                                src="data:image/png; base64, {{ base64_encode(file_get_contents(public_path('img/undersignqr.png'))) }}"
+                                style="width: 100%;"
+                            >
+                        </div>
                     </div>
                     <div class="text-center">
                         <p class="mb-1 fw-bolder">(<span class="d-inline-block"
                                 style="width: 130px;border: 0.3px solid #000000;"></span>)</p>
                         <p class="fw-bolder mb-1">{{ '<Branch stores >' }}</p>
-                        <p class="fw-bolder text-red">ผู้อนุมัติสินค้า</p>
+                        <p class="fw-bolder text-red mb-2">ผู้อนุมัติสินค้า</p>
+
+                        <div class="mx-auto" style="width: 80px;">
+                            <img
+                                src="data:image/png; base64, {{ base64_encode(file_get_contents(public_path('img/undersignqr.png'))) }}"
+                                style="width: 100%;"
+                            >
+                        </div>
                     </div>
                     <div class="text-center">
                         <p class="mb-1 fw-bolder" style="margin-bottom: 33px;">(<span class="d-inline-block"
                                 style="width: 130px;border: 0.3px solid #000000;"></span>)</p>
                         <p class="fw-bolder mb-1">{{ '<Branch stores >' }}</p>
-                        <p class="fw-bolder text-red">พยาน</p>
+                        <p class="fw-bolder text-red mb-2">พยาน</p>
+
+                        <div class="mx-auto" style="width: 80px;">
+                            <img
+                                src="data:image/png; base64, {{ base64_encode(file_get_contents(public_path('img/undersignqr.png'))) }}"
+                                style="width: 100%;"
+                            >
+                        </div>
                     </div>
                 </div>
             </div>

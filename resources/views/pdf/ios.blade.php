@@ -87,7 +87,7 @@
 
 <body>
     <div class="container">
-        <div class="row mt-2">
+        <div class="row mt-1">
             <div class="d-flex justify-content-between align-items-center">
                 <img src="data:image/png; base64, {{ base64_encode(file_get_contents(public_path('img/ios-logo.png'))) }}"
                     style="width: 100px; height: 90px;" class="ms-3">
@@ -99,10 +99,10 @@
                 </div>
             </div>
 
-            <p class="fw-bolder text-center text-lg mb-3" style="color: #434343 !important;">
+            <p class="fw-bolder text-center text-lg mb-1" style="color: #434343 !important;">
                 {{ 'หนังสือสัญญาเช่าซื้อ <Android> <บริษัท พีเจ-ฟินน์ จำกัด>' }}</p>
 
-            <p class="mb-1" style="text-indent: 80px;">สัญญาฉบับนี้ทำขึ้นระหว่าง <span
+            <p class="mb-1" style="text-indent: 50px;">สัญญาฉบับนี้ทำขึ้นระหว่าง <span
                     class="fw-bolder">{{ '<บริษัท พีเจ-ฟินน์ จำกัด>' }}</span> ตั้งอยู่เลขที่ <span
                     class="fw-bolder">{{ '<108 หมู่2 ตำบลบ้านใหม่ อำเภอสามพราน จังหวัดนครปฐม 73110>' }}</span>
                 ซึ่งต่อไปนี้ในสัญญาฉบับนี้จะเรียกว่า "<span class="text-red fw-bolder">{{ 'ผู้ให้เช่าซื้อ' }}</span>"
@@ -138,7 +138,7 @@
                 </div>
             </div>
 
-            <p class="mb-1" style="text-indent: 30px;">
+            <p class="mb-1" style="text-indent: 50px;">
                 รายละเอียดปรากฏตามสำเนาบัตรประชาชน ซึ่งต่อไปนี้จะเรียกว่า "<span
                     class="text-red fw-bolder">ผู้เช่าซื้อ</span>" อีกฝ่ายหนึ่ง ทั้งสองฝ่ายตกลงทำสัญญากัน
                 ผู้ให้เช่าซื้อตกลงให้เช่าซื้อ
@@ -244,9 +244,7 @@
 
             <p class="text-center">*** ราคานี้รวมค่าประกันสินค้าแล้ว (เงื่อนไขการรับประกันเป็นไปตามที่ทางร้านกำหนด)***
             </p>
-
-            {{--            tac --}}
-            <div class="tac mb-3">
+            <div class="tac mb-1">
                 <p>เงื่อนไขการผ่อนชำระสินค้า</p>
                 <div class="row">
                     <div class="col-12">
@@ -343,8 +341,6 @@
                     </div>
                 </div>
             </div>
-
-            {{--                    signature --}}
             <p class="mb-1">ยินยอมตามเงือนไข</p>
             <div class="mb-1">
 
